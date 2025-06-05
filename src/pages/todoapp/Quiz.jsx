@@ -1,15 +1,17 @@
-
 import React, { useState, useEffect } from "react";
-import quizData from "../../data/easy.json";
-import  {getrandomquestion}  from "../../utility/getrandomquestion";
+import quizData from "../../data/quiz_dataset_age_2_8.json";
+import { getrandomquestion } from "../../utility/getrandomquestion";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const QuizPage = () => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(600); // 5 minutes
+  const [timeLeft, setTimeLeft] = useState(600); // 10 minutes
+  const [userAnswers, setUserAnswers] = useState([]);
+  const [startTime] = useState(Date.now()); // quiz start time in milliseconds
 
   useEffect(() => {
     const selectedQuestions = getrandomquestion(quizData, 5);
@@ -32,12 +34,18 @@ const QuizPage = () => {
 
   const handleAnswerSelect = (option) => {
     setSelectedAnswer(option);
-    if (option === currentQ.answer) setScore(score + 1);
 
-    // Auto move to next question after 1s
+    if (option === currentQ.answer) {
+      setScore((prev) => prev + 1);
+    }
+
+    const updatedAnswers = [...userAnswers];
+    updatedAnswers[currentIndex] = option;
+    setUserAnswers(updatedAnswers);
+
     setTimeout(() => {
       setSelectedAnswer(null);
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex((i) => i + 1);
     }, 800);
   };
 
@@ -47,80 +55,113 @@ const QuizPage = () => {
     return `${min}:${sec.toString().padStart(2, "0")}`;
   };
 
+  const saveQuizResults = async () => {
+    const scoresByCategory = {};
+
+    questions.forEach((q, idx) => {
+      if (!scoresByCategory[q.category]) {
+        scoresByCategory[q.category] = 0;
+      }
+      if (q.answer === userAnswers[idx]) {
+        scoresByCategory[q.category]++;
+      }
+    });
+
+    const token = localStorage.getItem("token");
+    const endTime = Date.now();
+  const timeSpentInSeconds = Math.floor((endTime - startTime) / 1000); // convert ms to seconds
+  console
+    try {
+      await axios.post(
+        "http://localhost:3000/api/quiz",
+        {
+          scores: scoresByCategory,
+          totalScore: score,
+          timeSpent: timeSpentInSeconds, // ✅ Include time spent
+
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      console.log("Quiz result saved successfully.");
+    } catch (error) {
+      console.error("Failed to save quiz results:", error);
+    }
+  };
+
+  useEffect(() => {
+    if (!currentQ && questions.length > 0) {
+      saveQuizResults();
+    }
+  }, [currentQ]);
+
   if (timeLeft <= 0) {
-  return (
-    <div className="min-h-screen flex items-center justify-center text-2xl font-bold  flex-col space-y-4">
-      Time's up! Your Score: {score}/{questions.length}
-    <Link to="/dashboard">
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center text-2xl font-bold space-y-4 px-4 text-center">
+        Time's up! Your Score: {score}/{questions.length}
+        <Link to="/dashboard">
           <button className="text-indigo-600 hover:text-indigo-800 font-medium">
             Back to Home
           </button>
-          </Link>
-    </div>
-  );
-}
+        </Link>
+      </div>
+    );
+  }
 
-if (!currentQ) {
-  return (
-
-    <div className="min-h-screen flex flex-col space-y-4 items-center justify-center text-2xl font-bold">
-      Quiz Finished! Your Score: {score}/{totalQuestions}
-      <Link to="/dashboard">
+  if (!currentQ) {
+    return (
+      <div className="min-h-screen flex flex-col space-y-4 items-center justify-center text-2xl font-bold px-4 text-center">
+        Quiz Finished! Your Score: {score}/{totalQuestions}
+        <Link to="/dashboard">
           <button className="text-indigo-600 hover:text-indigo-800 font-medium">
             Back to Home
           </button>
-          </Link>
-    </div>
-
-  );
-}
-
+        </Link>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 p-4 sm:p-6">
       {/* Header */}
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-indigo-700">LearnyMation Quiz</h1>
-        <div className="flex items-center space-x-4">
-          <span className="text-lg font-medium text-gray-700">
-            Category: {currentQ.category}
-          </span>
-          <div className="bg-indigo-100 px-4 py-2 rounded-lg">
-            <span className="text-indigo-700 font-medium">
-              Time left: {formatTime(timeLeft)}
-            </span>
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 space-y-4 sm:space-y-0">
+        <h1 className="text-2xl sm:text-3xl font-bold text-indigo-700">LearnyMation Quiz</h1>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm sm:text-lg">
+          <span className="font-medium text-gray-700">Category: {currentQ.category}</span>
+          <div className="bg-indigo-100 px-3 py-1 rounded-lg">
+            <span className="text-indigo-700 font-medium">Time left: {formatTime(timeLeft)}</span>
           </div>
           <Link to="/dashboard">
-          <button className="text-indigo-600 hover:text-indigo-800 font-medium">
-            Back to Home
-          </button>
+            <button className="text-indigo-600 hover:text-indigo-800 font-medium">Back to Home</button>
           </Link>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-gray-200 rounded-full h-4 mb-8">
+      <div className="w-full bg-gray-200 rounded-full h-3 mb-6">
         <div
-          className="bg-indigo-600 h-4 rounded-full"
+          className="bg-indigo-600 h-3 rounded-full transition-all duration-300 ease-in-out"
           style={{ width: `${progressPercentage}%` }}
         ></div>
       </div>
 
       {/* Question Card */}
-      <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-        <div className="mb-6">
-          <span className="text-lg font-medium text-gray-500">
-            Question {currentIndex + 1} of {totalQuestions}
-          </span>
+      <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 mb-6 sm:mb-8">
+        <div className="mb-4 sm:mb-6 text-sm sm:text-lg font-medium text-gray-500">
+          Question {currentIndex + 1} of {totalQuestions}
         </div>
 
-        <h2 className="text-2xl font-semibold mb-6">{currentQ.question}</h2>
+        <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">{currentQ.question}</h2>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {currentQ.options.map((option, index) => (
             <div
               key={index}
-              className={`p-4 border-2 rounded-lg cursor-pointer transition-colors ${
+              className={`p-3 sm:p-4 border-2 rounded-lg cursor-pointer transition-colors ${
                 selectedAnswer === option
                   ? "border-indigo-600 bg-indigo-50"
                   : "border-gray-200 hover:border-indigo-300"
@@ -139,7 +180,7 @@ if (!currentQ) {
                     <div className="w-2 h-2 rounded-full bg-white"></div>
                   )}
                 </div>
-                <span className="text-lg">{option}</span>
+                <span className="text-base sm:text-lg">{option}</span>
               </div>
             </div>
           ))}
@@ -147,23 +188,28 @@ if (!currentQ) {
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-between items-center">
-        <div className="text-gray-600">
+      <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <div className="text-gray-600 text-sm sm:text-base">
           <span className="font-medium">Your Journey</span> {progressPercentage}%
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-3 sm:space-x-4">
           <button
-            className="px-6 py-3 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition-colors"
+            className="px-5 py-2 sm:px-6 sm:py-3 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition-colors"
             onClick={() => setCurrentIndex((i) => Math.max(i - 1, 0))}
+            disabled={currentIndex === 0}
           >
             Go Back
           </button>
           <button
-            className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+            className="px-5 py-2 sm:px-6 sm:py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
             onClick={() => {
-              if (selectedAnswer) return;
+              // if (!userAnswers[currentIndex]) {
+              //   alert("Please select an answer before moving forward!");
+              //   return;
+              // }
               setCurrentIndex((i) => i + 1);
             }}
+            disabled={currentIndex === totalQuestions - 1}
           >
             Keep Going
           </button>

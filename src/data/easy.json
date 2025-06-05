@@ -50,16 +50,16 @@
       { "question": "Which one is round?", "options": ["Ball", "Box", "Book", "TV"], "answer": "Ball" }
     ],
     "ObjectDetection": [
-      { "question": "Can you find the car? 🚗 🐶 🍎", "options": ["🚗", "🐶", "🍎", "🧃"], "answer": "🚗" },
-      { "question": "Which one is a fruit? 🍌 🍕 🐶", "options": ["🍌", "🍕", "🐶", "👟"], "answer": "🍌" },
-      { "question": "Find the animal 🐱 🍞 📚", "options": ["🐱", "🍞", "📚", "🪑"], "answer": "🐱" },
-      { "question": "Where is the sun? ☁️ 🌞 🌧️", "options": ["🌞", "☁️", "🌧️", "🌕"], "answer": "🌞" },
-      { "question": "Can you see the apple? 🍏 📘 🧃", "options": ["🍏", "📘", "🧃", "🛁"], "answer": "🍏" },
-      { "question": "Which is for coloring? ✏️ 🍴 🪑", "options": ["✏️", "🍴", "🪑", "📱"], "answer": "✏️" },
-      { "question": "Which one is a bird? 🐦 🐟 🐶", "options": ["🐦", "🐟", "🐶", "🐸"], "answer": "🐦" },
-      { "question": "Which is a book? 📘 🍕 🎈", "options": ["📘", "🍕", "🎈", "🧸"], "answer": "📘" },
-      { "question": "What do you wear? 👕 🍎 📚", "options": ["👕", "🍎", "📚", "📱"], "answer": "👕" },
-      { "question": "Which one is used to clean teeth? 🪥 🧃 🍽", "options": ["🪥", "🧃", "🍽", "📺"], "answer": "🪥" }
+      { "question": "Can you find the car? 🚗 🐶 🍎 🧃", "options": ["🚗", "🐶", "🍎", "🧃"], "answer": "🚗" },
+      { "question": "Which one is a fruit? 🍌 🍕 🐶 🪑", "options": ["🍌", "🍕", "🐶", "👟"], "answer": "🍌" },
+      { "question": "Find the animal 🐱 🍞 📚 🪑", "options": ["🐱", "🍞", "📚", "🪑"], "answer": "🐱" },
+      { "question": "Where is the sun? ☁️ 🌞 🌧️ 🌕", "options": ["🌞", "☁️", "🌧️", "🌕"], "answer": "🌞" },
+      { "question": "Can you see the apple? 🍏 📘 🧃 🛁", "options": ["🍏", "📘", "🧃", "🛁"], "answer": "🍏" },
+      { "question": "Which is for coloring? ✏️ 🍴 🪑 📱", "options": ["✏️", "🍴", "🪑", "📱"], "answer": "✏️" },
+      { "question": "Which one is a bird? 🐦 🐟 🐶 🐸", "options": ["🐦", "🐟", "🐶", "🐸"], "answer": "🐦" },
+      { "question": "Which is a book? 📘 🍕 🎈 🧸", "options": ["📘", "🍕", "🎈", "🧸"], "answer": "📘" },
+      { "question": "What do you wear? 👕 🍎 📚 📱", "options": ["👕", "🍎", "📚", "📱"], "answer": "👕" },
+      { "question": "Which one is used to clean teeth? 🪥 🧃 🍽 📺", "options": ["🪥", "🧃", "🍽", "📺"], "answer": "🪥" }
     ]
   }
 }

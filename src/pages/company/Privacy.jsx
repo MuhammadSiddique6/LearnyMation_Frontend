@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
 
         <h2 className="text-xl font-semibold text-green-500 mb-2">5. Contact Us</h2>
         <p className="mb-4">
-          Questions? Email us at <a href="mailto:privacy@learnymation.com" className="text-green-600 underline">privacy@brightkids.com</a>.
+          Questions? Email us at <a href="mailto:privacy@learnymation.com" className="text-green-600 underline">privacy@learnymation.com</a>.
         </p>
       </div>
     </div>

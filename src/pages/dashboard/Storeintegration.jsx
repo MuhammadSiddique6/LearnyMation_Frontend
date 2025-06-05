@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { toast } from 'react-hot-toast';
+import axios from "axios";
 const StoreIntegration = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [mobile, setMobile] = useState("");
@@ -102,40 +103,43 @@ const StoreIntegration = () => {
     setShowModal(true);
   };
 
-  const handleSubmitOrder = async () => {
-    if (!mobile || !address) {
-      alert("Please fill all fields");
-      return;
-    }
+const handleSubmitOrder = async () => {
+  if (!mobile || !address) {
+    toast.error("Please fill all fields");
+    return;
+  }
 
-    const orderData = {
-      productId: selectedProduct.id,
-      productName: selectedProduct.name,
-      mobile,
-      address
-    };
+  const token = localStorage.getItem("token"); // Or sessionStorage.getItem("token")
 
-    try {
-      const res = await fetch("http://localhost:5000/api/orders", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(orderData)
-      });
-
-      if (res.ok) {
-        alert("Order placed successfully!");
-        setShowModal(false);
-        setMobile("");
-        setAddress("");
-        setSelectedProduct(null);
-      } else {
-        alert("Failed to place order");
-      }
-    } catch (err) {
-      console.error(err);
-      alert("Error submitting order");
-    }
+  const orderData = {
+    productId: selectedProduct.id,
+    productName: selectedProduct.name,
+    mobile,
+    address,
   };
+
+  try {
+    const res = await axios.post("http://localhost:3000/api/order", orderData, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json"
+      }
+    });
+
+    if (res.status === 200 || res.status === 201) {
+      toast.success("Order placed successfully!");
+      setShowModal(false);
+      setMobile("");
+      setAddress("");
+      setSelectedProduct(null);
+    } else {
+      toast.error("Failed to place order");
+    }
+  } catch (error) {
+    console.error("Order error:", error.response || error);
+    toast.error(error?.response?.data?.message || "Error submitting order");
+  }
+};
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

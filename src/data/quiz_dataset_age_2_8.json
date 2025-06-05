@@ -1,0 +1,1565 @@
+{
+  "ageGroup": "2-8",
+  "categories": {
+    "Math": [
+      {
+        "question": "What number comes after 1? ",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many fingers on one hand? ",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5"
+      },
+      {
+        "question": "What shape has 3 sides? ",
+        "options": ["Circle", "Square", "Triangle", "Star"],
+        "answer": "Triangle"
+      },
+      {
+        "question": "Which is the number 4? ",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 1 + 1? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which one is a circle? ",
+        "options": [
+          "\ud83d\udd35",
+          "\ud83d\udfe5",
+          "\ud83d\udfe6",
+          "\ud83d\udd3a"
+        ],
+        "answer": "\ud83d\udd35"
+      },
+      {
+        "question": "What number comes before 3? ",
+        "options": ["1", "2", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many eyes do you have? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is bigger: 2 or 1? ",
+        "options": ["1", "2"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is a square? ",
+        "options": ["\ud83d\udd35", "\ud83d\udfe9", "\ud83d\udfe5", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "What number comes after 1? ",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many fingers on one hand? ",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5"
+      },
+      {
+        "question": "What shape has 3 sides? ",
+        "options": ["Circle", "Square", "Triangle", "Star"],
+        "answer": "Triangle"
+      },
+      {
+        "question": "Which is the number 4? ",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 1 + 1? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which one is a circle? ",
+        "options": [
+          "\ud83d\udd35",
+          "\ud83d\udfe5",
+          "\ud83d\udfe6",
+          "\ud83d\udd3a"
+        ],
+        "answer": "\ud83d\udd35"
+      },
+      {
+        "question": "What number comes before 3? ",
+        "options": ["1", "2", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many eyes do you have? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is bigger: 2 or 1? ",
+        "options": ["1", "2"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is a square? ",
+        "options": ["\ud83d\udd35", "\ud83d\udfe9", "\ud83d\udfe5", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "What number comes after 1? ",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many fingers on one hand? ",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5"
+      },
+      {
+        "question": "What shape has 3 sides? ",
+        "options": ["Circle", "Square", "Triangle", "Star"],
+        "answer": "Triangle"
+      },
+      {
+        "question": "Which is the number 4? ",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 1 + 1? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which one is a circle? ",
+        "options": [
+          "\ud83d\udd35",
+          "\ud83d\udfe5",
+          "\ud83d\udfe6",
+          "\ud83d\udd3a"
+        ],
+        "answer": "\ud83d\udd35"
+      },
+      {
+        "question": "What number comes before 3? ",
+        "options": ["1", "2", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many eyes do you have? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is bigger: 2 or 1? ",
+        "options": ["1", "2"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is a square? ",
+        "options": ["\ud83d\udd35", "\ud83d\udfe9", "\ud83d\udfe5", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "What number comes after 1? ",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many fingers on one hand? ",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5"
+      },
+      {
+        "question": "What shape has 3 sides? ",
+        "options": ["Circle", "Square", "Triangle", "Star"],
+        "answer": "Triangle"
+      },
+      {
+        "question": "Which is the number 4? ",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 1 + 1? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which one is a circle? ",
+        "options": [
+          "\ud83d\udd35",
+          "\ud83d\udfe5",
+          "\ud83d\udfe6",
+          "\ud83d\udd3a"
+        ],
+        "answer": "\ud83d\udd35"
+      },
+      {
+        "question": "What number comes before 3? ",
+        "options": ["1", "2", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many eyes do you have? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is bigger: 2 or 1? ",
+        "options": ["1", "2"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is a square? ",
+        "options": ["\ud83d\udd35", "\ud83d\udfe9", "\ud83d\udfe5", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "What number comes after 1? ",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many fingers on one hand? ",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5"
+      },
+      {
+        "question": "What shape has 3 sides? ",
+        "options": ["Circle", "Square", "Triangle", "Star"],
+        "answer": "Triangle"
+      },
+      {
+        "question": "Which is the number 4? ",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 1 + 1? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which one is a circle? ",
+        "options": [
+          "\ud83d\udd35",
+          "\ud83d\udfe5",
+          "\ud83d\udfe6",
+          "\ud83d\udd3a"
+        ],
+        "answer": "\ud83d\udd35"
+      },
+      {
+        "question": "What number comes before 3? ",
+        "options": ["1", "2", "4", "5"],
+        "answer": "2"
+      },
+      {
+        "question": "How many eyes do you have? ",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is bigger: 2 or 1? ",
+        "options": ["1", "2"],
+        "answer": "2"
+      },
+      {
+        "question": "Which is a square? ",
+        "options": ["\ud83d\udd35", "\ud83d\udfe9", "\ud83d\udfe5", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      }
+    ],
+    "Science": [
+      {
+        "question": "What do we drink when thirsty? ",
+        "options": ["Milk", "Water", "Juice", "Oil"],
+        "answer": "Water"
+      },
+      {
+        "question": "What color is the sun? ",
+        "options": ["Red", "Yellow", "Blue", "Green"],
+        "answer": "Yellow"
+      },
+      {
+        "question": "What do we breathe? ",
+        "options": ["Air", "Water", "Milk", "Juice"],
+        "answer": "Air"
+      },
+      {
+        "question": "Which one can fly? ",
+        "options": ["Bird", "Dog", "Fish", "Cat"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Chair", "Shoe", "Car"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which animal says 'meow'? ",
+        "options": ["Dog", "Cat", "Cow", "Lion"],
+        "answer": "Cat"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Oil", "Juice", "Milk"],
+        "answer": "Water"
+      },
+      {
+        "question": "Where do fish live? ",
+        "options": ["Water", "Sky", "Tree", "House"],
+        "answer": "Water"
+      },
+      {
+        "question": "What shines in the sky at night? ",
+        "options": ["Moon", "Sun", "Star", "Cloud"],
+        "answer": "Moon"
+      },
+      {
+        "question": "Which is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Oven"],
+        "answer": "Ice"
+      },
+      {
+        "question": "What do we drink when thirsty? ",
+        "options": ["Milk", "Water", "Juice", "Oil"],
+        "answer": "Water"
+      },
+      {
+        "question": "What color is the sun? ",
+        "options": ["Red", "Yellow", "Blue", "Green"],
+        "answer": "Yellow"
+      },
+      {
+        "question": "What do we breathe? ",
+        "options": ["Air", "Water", "Milk", "Juice"],
+        "answer": "Air"
+      },
+      {
+        "question": "Which one can fly? ",
+        "options": ["Bird", "Dog", "Fish", "Cat"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Chair", "Shoe", "Car"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which animal says 'meow'? ",
+        "options": ["Dog", "Cat", "Cow", "Lion"],
+        "answer": "Cat"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Oil", "Juice", "Milk"],
+        "answer": "Water"
+      },
+      {
+        "question": "Where do fish live? ",
+        "options": ["Water", "Sky", "Tree", "House"],
+        "answer": "Water"
+      },
+      {
+        "question": "What shines in the sky at night? ",
+        "options": ["Moon", "Sun", "Star", "Cloud"],
+        "answer": "Moon"
+      },
+      {
+        "question": "Which is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Oven"],
+        "answer": "Ice"
+      },
+      {
+        "question": "What do we drink when thirsty? ",
+        "options": ["Milk", "Water", "Juice", "Oil"],
+        "answer": "Water"
+      },
+      {
+        "question": "What color is the sun? ",
+        "options": ["Red", "Yellow", "Blue", "Green"],
+        "answer": "Yellow"
+      },
+      {
+        "question": "What do we breathe? ",
+        "options": ["Air", "Water", "Milk", "Juice"],
+        "answer": "Air"
+      },
+      {
+        "question": "Which one can fly? ",
+        "options": ["Bird", "Dog", "Fish", "Cat"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Chair", "Shoe", "Car"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which animal says 'meow'? ",
+        "options": ["Dog", "Cat", "Cow", "Lion"],
+        "answer": "Cat"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Oil", "Juice", "Milk"],
+        "answer": "Water"
+      },
+      {
+        "question": "Where do fish live? ",
+        "options": ["Water", "Sky", "Tree", "House"],
+        "answer": "Water"
+      },
+      {
+        "question": "What shines in the sky at night? ",
+        "options": ["Moon", "Sun", "Star", "Cloud"],
+        "answer": "Moon"
+      },
+      {
+        "question": "Which is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Oven"],
+        "answer": "Ice"
+      },
+      {
+        "question": "What do we drink when thirsty? ",
+        "options": ["Milk", "Water", "Juice", "Oil"],
+        "answer": "Water"
+      },
+      {
+        "question": "What color is the sun? ",
+        "options": ["Red", "Yellow", "Blue", "Green"],
+        "answer": "Yellow"
+      },
+      {
+        "question": "What do we breathe? ",
+        "options": ["Air", "Water", "Milk", "Juice"],
+        "answer": "Air"
+      },
+      {
+        "question": "Which one can fly? ",
+        "options": ["Bird", "Dog", "Fish", "Cat"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Chair", "Shoe", "Car"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which animal says 'meow'? ",
+        "options": ["Dog", "Cat", "Cow", "Lion"],
+        "answer": "Cat"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Oil", "Juice", "Milk"],
+        "answer": "Water"
+      },
+      {
+        "question": "Where do fish live? ",
+        "options": ["Water", "Sky", "Tree", "House"],
+        "answer": "Water"
+      },
+      {
+        "question": "What shines in the sky at night? ",
+        "options": ["Moon", "Sun", "Star", "Cloud"],
+        "answer": "Moon"
+      },
+      {
+        "question": "Which is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Oven"],
+        "answer": "Ice"
+      },
+      {
+        "question": "What do we drink when thirsty? ",
+        "options": ["Milk", "Water", "Juice", "Oil"],
+        "answer": "Water"
+      },
+      {
+        "question": "What color is the sun? ",
+        "options": ["Red", "Yellow", "Blue", "Green"],
+        "answer": "Yellow"
+      },
+      {
+        "question": "What do we breathe? ",
+        "options": ["Air", "Water", "Milk", "Juice"],
+        "answer": "Air"
+      },
+      {
+        "question": "Which one can fly? ",
+        "options": ["Bird", "Dog", "Fish", "Cat"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Chair", "Shoe", "Car"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which animal says 'meow'? ",
+        "options": ["Dog", "Cat", "Cow", "Lion"],
+        "answer": "Cat"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Oil", "Juice", "Milk"],
+        "answer": "Water"
+      },
+      {
+        "question": "Where do fish live? ",
+        "options": ["Water", "Sky", "Tree", "House"],
+        "answer": "Water"
+      },
+      {
+        "question": "What shines in the sky at night? ",
+        "options": ["Moon", "Sun", "Star", "Cloud"],
+        "answer": "Moon"
+      },
+      {
+        "question": "Which is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Oven"],
+        "answer": "Ice"
+      }
+    ],
+    "Creativity": [
+      {
+        "question": "Which color is this? \ud83d\udfe5 ",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red"
+      },
+      {
+        "question": "What do you use to draw? ",
+        "options": ["Pencil", "Spoon", "Phone", "Shoe"],
+        "answer": "Pencil"
+      },
+      {
+        "question": "What can you use to paint? ",
+        "options": ["Brush", "Fork", "Comb", "Knife"],
+        "answer": "Brush"
+      },
+      {
+        "question": "Which is a musical instrument? ",
+        "options": ["Drum", "Plate", "Chair", "Cup"],
+        "answer": "Drum"
+      },
+      {
+        "question": "Which is a color? ",
+        "options": ["Blue", "Spoon", "Dog", "Hat"],
+        "answer": "Blue"
+      },
+      {
+        "question": "What do you use to color? ",
+        "options": ["Crayons", "Fork", "Soap", "TV"],
+        "answer": "Crayons"
+      },
+      {
+        "question": "What is round and can roll? ",
+        "options": ["Ball", "Box", "Book", "Stick"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which animal has a long trunk? ",
+        "options": ["Elephant", "Dog", "Fish", "Cat"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "What do you build with blocks? ",
+        "options": ["Towers", "Water", "Books", "Paint"],
+        "answer": "Towers"
+      },
+      {
+        "question": "What do you wear on your head? ",
+        "options": ["Hat", "Shoes", "Gloves", "Pants"],
+        "answer": "Hat"
+      },
+      {
+        "question": "Which color is this? \ud83d\udfe5 ",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red"
+      },
+      {
+        "question": "What do you use to draw? ",
+        "options": ["Pencil", "Spoon", "Phone", "Shoe"],
+        "answer": "Pencil"
+      },
+      {
+        "question": "What can you use to paint? ",
+        "options": ["Brush", "Fork", "Comb", "Knife"],
+        "answer": "Brush"
+      },
+      {
+        "question": "Which is a musical instrument? ",
+        "options": ["Drum", "Plate", "Chair", "Cup"],
+        "answer": "Drum"
+      },
+      {
+        "question": "Which is a color? ",
+        "options": ["Blue", "Spoon", "Dog", "Hat"],
+        "answer": "Blue"
+      },
+      {
+        "question": "What do you use to color? ",
+        "options": ["Crayons", "Fork", "Soap", "TV"],
+        "answer": "Crayons"
+      },
+      {
+        "question": "What is round and can roll? ",
+        "options": ["Ball", "Box", "Book", "Stick"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which animal has a long trunk? ",
+        "options": ["Elephant", "Dog", "Fish", "Cat"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "What do you build with blocks? ",
+        "options": ["Towers", "Water", "Books", "Paint"],
+        "answer": "Towers"
+      },
+      {
+        "question": "What do you wear on your head? ",
+        "options": ["Hat", "Shoes", "Gloves", "Pants"],
+        "answer": "Hat"
+      },
+      {
+        "question": "Which color is this? \ud83d\udfe5 ",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red"
+      },
+      {
+        "question": "What do you use to draw? ",
+        "options": ["Pencil", "Spoon", "Phone", "Shoe"],
+        "answer": "Pencil"
+      },
+      {
+        "question": "What can you use to paint? ",
+        "options": ["Brush", "Fork", "Comb", "Knife"],
+        "answer": "Brush"
+      },
+      {
+        "question": "Which is a musical instrument? ",
+        "options": ["Drum", "Plate", "Chair", "Cup"],
+        "answer": "Drum"
+      },
+      {
+        "question": "Which is a color? ",
+        "options": ["Blue", "Spoon", "Dog", "Hat"],
+        "answer": "Blue"
+      },
+      {
+        "question": "What do you use to color? ",
+        "options": ["Crayons", "Fork", "Soap", "TV"],
+        "answer": "Crayons"
+      },
+      {
+        "question": "What is round and can roll? ",
+        "options": ["Ball", "Box", "Book", "Stick"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which animal has a long trunk? ",
+        "options": ["Elephant", "Dog", "Fish", "Cat"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "What do you build with blocks? ",
+        "options": ["Towers", "Water", "Books", "Paint"],
+        "answer": "Towers"
+      },
+      {
+        "question": "What do you wear on your head? ",
+        "options": ["Hat", "Shoes", "Gloves", "Pants"],
+        "answer": "Hat"
+      },
+      {
+        "question": "Which color is this? \ud83d\udfe5 ",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red"
+      },
+      {
+        "question": "What do you use to draw? ",
+        "options": ["Pencil", "Spoon", "Phone", "Shoe"],
+        "answer": "Pencil"
+      },
+      {
+        "question": "What can you use to paint? ",
+        "options": ["Brush", "Fork", "Comb", "Knife"],
+        "answer": "Brush"
+      },
+      {
+        "question": "Which is a musical instrument? ",
+        "options": ["Drum", "Plate", "Chair", "Cup"],
+        "answer": "Drum"
+      },
+      {
+        "question": "Which is a color? ",
+        "options": ["Blue", "Spoon", "Dog", "Hat"],
+        "answer": "Blue"
+      },
+      {
+        "question": "What do you use to color? ",
+        "options": ["Crayons", "Fork", "Soap", "TV"],
+        "answer": "Crayons"
+      },
+      {
+        "question": "What is round and can roll? ",
+        "options": ["Ball", "Box", "Book", "Stick"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which animal has a long trunk? ",
+        "options": ["Elephant", "Dog", "Fish", "Cat"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "What do you build with blocks? ",
+        "options": ["Towers", "Water", "Books", "Paint"],
+        "answer": "Towers"
+      },
+      {
+        "question": "What do you wear on your head? ",
+        "options": ["Hat", "Shoes", "Gloves", "Pants"],
+        "answer": "Hat"
+      },
+      {
+        "question": "Which color is this? \ud83d\udfe5 ",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red"
+      },
+      {
+        "question": "What do you use to draw? ",
+        "options": ["Pencil", "Spoon", "Phone", "Shoe"],
+        "answer": "Pencil"
+      },
+      {
+        "question": "What can you use to paint? ",
+        "options": ["Brush", "Fork", "Comb", "Knife"],
+        "answer": "Brush"
+      },
+      {
+        "question": "Which is a musical instrument? ",
+        "options": ["Drum", "Plate", "Chair", "Cup"],
+        "answer": "Drum"
+      },
+      {
+        "question": "Which is a color? ",
+        "options": ["Blue", "Spoon", "Dog", "Hat"],
+        "answer": "Blue"
+      },
+      {
+        "question": "What do you use to color? ",
+        "options": ["Crayons", "Fork", "Soap", "TV"],
+        "answer": "Crayons"
+      },
+      {
+        "question": "What is round and can roll? ",
+        "options": ["Ball", "Box", "Book", "Stick"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which animal has a long trunk? ",
+        "options": ["Elephant", "Dog", "Fish", "Cat"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "What do you build with blocks? ",
+        "options": ["Towers", "Water", "Books", "Paint"],
+        "answer": "Towers"
+      },
+      {
+        "question": "What do you wear on your head? ",
+        "options": ["Hat", "Shoes", "Gloves", "Pants"],
+        "answer": "Hat"
+      }
+    ],
+    "LogicThinking": [
+      {
+        "question": "Which one is different? ",
+        "options": [
+          "\ud83d\udc36",
+          "\ud83d\udc31",
+          "\ud83d\udc2d",
+          "\ud83d\ude97"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "What comes next? \ud83d\udfe5 \ud83d\udfe5 \ud83d\udfe5 ___ ",
+        "options": ["\ud83d\udfe5", "\ud83d\udfe9", "\ud83d\udd35", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which one is different? ",
+        "options": [
+          "\ud83d\udc36",
+          "\ud83d\udc31",
+          "\ud83d\udc2d",
+          "\ud83d\ude97"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "What comes next? \ud83d\udfe5 \ud83d\udfe5 \ud83d\udfe5 ___ ",
+        "options": ["\ud83d\udfe5", "\ud83d\udfe9", "\ud83d\udd35", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which one is different? ",
+        "options": [
+          "\ud83d\udc36",
+          "\ud83d\udc31",
+          "\ud83d\udc2d",
+          "\ud83d\ude97"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "What comes next? \ud83d\udfe5 \ud83d\udfe5 \ud83d\udfe5 ___ ",
+        "options": ["\ud83d\udfe5", "\ud83d\udfe9", "\ud83d\udd35", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which one is different? ",
+        "options": [
+          "\ud83d\udc36",
+          "\ud83d\udc31",
+          "\ud83d\udc2d",
+          "\ud83d\ude97"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "What comes next? \ud83d\udfe5 \ud83d\udfe5 \ud83d\udfe5 ___ ",
+        "options": ["\ud83d\udfe5", "\ud83d\udfe9", "\ud83d\udd35", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which one is different? ",
+        "options": [
+          "\ud83d\udc36",
+          "\ud83d\udc31",
+          "\ud83d\udc2d",
+          "\ud83d\ude97"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "What comes next? \ud83d\udfe5 \ud83d\udfe5 \ud83d\udfe5 ___ ",
+        "options": ["\ud83d\udfe5", "\ud83d\udfe9", "\ud83d\udd35", "\u2b50"],
+        "answer": "\ud83d\udfe5"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      }
+    ],
+    "ObjectDetection": [
+      {
+        "question": "Can you find the car? \ud83d\ude97 \ud83d\udc36 \ud83c\udf4e \ud83e\uddc3 ",
+        "options": [
+          "\ud83d\ude97",
+          "\ud83d\udc36",
+          "\ud83c\udf4e",
+          "\ud83e\uddc3"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "Which one is a fruit? \ud83c\udf4c \ud83c\udf55 \ud83d\udc36 \ud83e\ude91 ",
+        "options": [
+          "\ud83c\udf4c",
+          "\ud83c\udf55",
+          "\ud83d\udc36",
+          "\ud83d\udc5f"
+        ],
+        "answer": "\ud83c\udf4c"
+      },
+      {
+        "question": "Find the animal \ud83d\udc31 \ud83c\udf5e \ud83d\udcda \ud83e\ude91 ",
+        "options": [
+          "\ud83d\udc31",
+          "\ud83c\udf5e",
+          "\ud83d\udcda",
+          "\ud83e\ude91"
+        ],
+        "answer": "\ud83d\udc31"
+      },
+      {
+        "question": "Where is the sun? \u2601\ufe0f \ud83c\udf1e \ud83c\udf27\ufe0f \ud83c\udf15 ",
+        "options": [
+          "\ud83c\udf1e",
+          "\u2601\ufe0f",
+          "\ud83c\udf27\ufe0f",
+          "\ud83c\udf15"
+        ],
+        "answer": "\ud83c\udf1e"
+      },
+      {
+        "question": "Can you see the apple? \ud83c\udf4f \ud83d\udcd8 \ud83e\uddc3 \ud83d\udec1 ",
+        "options": [
+          "\ud83c\udf4f",
+          "\ud83d\udcd8",
+          "\ud83e\uddc3",
+          "\ud83d\udec1"
+        ],
+        "answer": "\ud83c\udf4f"
+      },
+      {
+        "question": "Which is for coloring? \u270f\ufe0f \ud83c\udf74 \ud83e\ude91 \ud83d\udcf1 ",
+        "options": [
+          "\u270f\ufe0f",
+          "\ud83c\udf74",
+          "\ud83e\ude91",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\u270f\ufe0f"
+      },
+      {
+        "question": "Which one is a bird? \ud83d\udc26 \ud83d\udc1f \ud83d\udc36 \ud83d\udc38 ",
+        "options": [
+          "\ud83d\udc26",
+          "\ud83d\udc1f",
+          "\ud83d\udc36",
+          "\ud83d\udc38"
+        ],
+        "answer": "\ud83d\udc26"
+      },
+      {
+        "question": "Which is a book? \ud83d\udcd8 \ud83c\udf55 \ud83c\udf88 \ud83e\uddf8 ",
+        "options": [
+          "\ud83d\udcd8",
+          "\ud83c\udf55",
+          "\ud83c\udf88",
+          "\ud83e\uddf8"
+        ],
+        "answer": "\ud83d\udcd8"
+      },
+      {
+        "question": "What do you wear? \ud83d\udc55 \ud83c\udf4e \ud83d\udcda \ud83d\udcf1 ",
+        "options": [
+          "\ud83d\udc55",
+          "\ud83c\udf4e",
+          "\ud83d\udcda",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\ud83d\udc55"
+      },
+      {
+        "question": "Which one is used to clean teeth? \ud83e\udea5 \ud83e\uddc3 \ud83c\udf7d \ud83d\udcfa ",
+        "options": [
+          "\ud83e\udea5",
+          "\ud83e\uddc3",
+          "\ud83c\udf7d",
+          "\ud83d\udcfa"
+        ],
+        "answer": "\ud83e\udea5"
+      },
+      {
+        "question": "Can you find the car? \ud83d\ude97 \ud83d\udc36 \ud83c\udf4e \ud83e\uddc3 ",
+        "options": [
+          "\ud83d\ude97",
+          "\ud83d\udc36",
+          "\ud83c\udf4e",
+          "\ud83e\uddc3"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "Which one is a fruit? \ud83c\udf4c \ud83c\udf55 \ud83d\udc36 \ud83e\ude91 ",
+        "options": [
+          "\ud83c\udf4c",
+          "\ud83c\udf55",
+          "\ud83d\udc36",
+          "\ud83d\udc5f"
+        ],
+        "answer": "\ud83c\udf4c"
+      },
+      {
+        "question": "Find the animal \ud83d\udc31 \ud83c\udf5e \ud83d\udcda \ud83e\ude91 ",
+        "options": [
+          "\ud83d\udc31",
+          "\ud83c\udf5e",
+          "\ud83d\udcda",
+          "\ud83e\ude91"
+        ],
+        "answer": "\ud83d\udc31"
+      },
+      {
+        "question": "Where is the sun? \u2601\ufe0f \ud83c\udf1e \ud83c\udf27\ufe0f \ud83c\udf15 ",
+        "options": [
+          "\ud83c\udf1e",
+          "\u2601\ufe0f",
+          "\ud83c\udf27\ufe0f",
+          "\ud83c\udf15"
+        ],
+        "answer": "\ud83c\udf1e"
+      },
+      {
+        "question": "Can you see the apple? \ud83c\udf4f \ud83d\udcd8 \ud83e\uddc3 \ud83d\udec1 ",
+        "options": [
+          "\ud83c\udf4f",
+          "\ud83d\udcd8",
+          "\ud83e\uddc3",
+          "\ud83d\udec1"
+        ],
+        "answer": "\ud83c\udf4f"
+      },
+      {
+        "question": "Which is for coloring? \u270f\ufe0f \ud83c\udf74 \ud83e\ude91 \ud83d\udcf1 ",
+        "options": [
+          "\u270f\ufe0f",
+          "\ud83c\udf74",
+          "\ud83e\ude91",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\u270f\ufe0f"
+      },
+      {
+        "question": "Which one is a bird? \ud83d\udc26 \ud83d\udc1f \ud83d\udc36 \ud83d\udc38 ",
+        "options": [
+          "\ud83d\udc26",
+          "\ud83d\udc1f",
+          "\ud83d\udc36",
+          "\ud83d\udc38"
+        ],
+        "answer": "\ud83d\udc26"
+      },
+      {
+        "question": "Which is a book? \ud83d\udcd8 \ud83c\udf55 \ud83c\udf88 \ud83e\uddf8 ",
+        "options": [
+          "\ud83d\udcd8",
+          "\ud83c\udf55",
+          "\ud83c\udf88",
+          "\ud83e\uddf8"
+        ],
+        "answer": "\ud83d\udcd8"
+      },
+      {
+        "question": "What do you wear? \ud83d\udc55 \ud83c\udf4e \ud83d\udcda \ud83d\udcf1 ",
+        "options": [
+          "\ud83d\udc55",
+          "\ud83c\udf4e",
+          "\ud83d\udcda",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\ud83d\udc55"
+      },
+      {
+        "question": "Which one is used to clean teeth? \ud83e\udea5 \ud83e\uddc3 \ud83c\udf7d \ud83d\udcfa ",
+        "options": [
+          "\ud83e\udea5",
+          "\ud83e\uddc3",
+          "\ud83c\udf7d",
+          "\ud83d\udcfa"
+        ],
+        "answer": "\ud83e\udea5"
+      },
+      {
+        "question": "Can you find the car? \ud83d\ude97 \ud83d\udc36 \ud83c\udf4e \ud83e\uddc3 ",
+        "options": [
+          "\ud83d\ude97",
+          "\ud83d\udc36",
+          "\ud83c\udf4e",
+          "\ud83e\uddc3"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "Which one is a fruit? \ud83c\udf4c \ud83c\udf55 \ud83d\udc36 \ud83e\ude91 ",
+        "options": [
+          "\ud83c\udf4c",
+          "\ud83c\udf55",
+          "\ud83d\udc36",
+          "\ud83d\udc5f"
+        ],
+        "answer": "\ud83c\udf4c"
+      },
+      {
+        "question": "Find the animal \ud83d\udc31 \ud83c\udf5e \ud83d\udcda \ud83e\ude91 ",
+        "options": [
+          "\ud83d\udc31",
+          "\ud83c\udf5e",
+          "\ud83d\udcda",
+          "\ud83e\ude91"
+        ],
+        "answer": "\ud83d\udc31"
+      },
+      {
+        "question": "Where is the sun? \u2601\ufe0f \ud83c\udf1e \ud83c\udf27\ufe0f \ud83c\udf15 ",
+        "options": [
+          "\ud83c\udf1e",
+          "\u2601\ufe0f",
+          "\ud83c\udf27\ufe0f",
+          "\ud83c\udf15"
+        ],
+        "answer": "\ud83c\udf1e"
+      },
+      {
+        "question": "Can you see the apple? \ud83c\udf4f \ud83d\udcd8 \ud83e\uddc3 \ud83d\udec1 ",
+        "options": [
+          "\ud83c\udf4f",
+          "\ud83d\udcd8",
+          "\ud83e\uddc3",
+          "\ud83d\udec1"
+        ],
+        "answer": "\ud83c\udf4f"
+      },
+      {
+        "question": "Which is for coloring? \u270f\ufe0f \ud83c\udf74 \ud83e\ude91 \ud83d\udcf1 ",
+        "options": [
+          "\u270f\ufe0f",
+          "\ud83c\udf74",
+          "\ud83e\ude91",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\u270f\ufe0f"
+      },
+      {
+        "question": "Which one is a bird? \ud83d\udc26 \ud83d\udc1f \ud83d\udc36 \ud83d\udc38 ",
+        "options": [
+          "\ud83d\udc26",
+          "\ud83d\udc1f",
+          "\ud83d\udc36",
+          "\ud83d\udc38"
+        ],
+        "answer": "\ud83d\udc26"
+      },
+      {
+        "question": "Which is a book? \ud83d\udcd8 \ud83c\udf55 \ud83c\udf88 \ud83e\uddf8 ",
+        "options": [
+          "\ud83d\udcd8",
+          "\ud83c\udf55",
+          "\ud83c\udf88",
+          "\ud83e\uddf8"
+        ],
+        "answer": "\ud83d\udcd8"
+      },
+      {
+        "question": "What do you wear? \ud83d\udc55 \ud83c\udf4e \ud83d\udcda \ud83d\udcf1 ",
+        "options": [
+          "\ud83d\udc55",
+          "\ud83c\udf4e",
+          "\ud83d\udcda",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\ud83d\udc55"
+      },
+      {
+        "question": "Which one is used to clean teeth? \ud83e\udea5 \ud83e\uddc3 \ud83c\udf7d \ud83d\udcfa ",
+        "options": [
+          "\ud83e\udea5",
+          "\ud83e\uddc3",
+          "\ud83c\udf7d",
+          "\ud83d\udcfa"
+        ],
+        "answer": "\ud83e\udea5"
+      },
+      {
+        "question": "Can you find the car? \ud83d\ude97 \ud83d\udc36 \ud83c\udf4e \ud83e\uddc3 ",
+        "options": [
+          "\ud83d\ude97",
+          "\ud83d\udc36",
+          "\ud83c\udf4e",
+          "\ud83e\uddc3"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "Which one is a fruit? \ud83c\udf4c \ud83c\udf55 \ud83d\udc36 \ud83e\ude91 ",
+        "options": [
+          "\ud83c\udf4c",
+          "\ud83c\udf55",
+          "\ud83d\udc36",
+          "\ud83d\udc5f"
+        ],
+        "answer": "\ud83c\udf4c"
+      },
+      {
+        "question": "Find the animal \ud83d\udc31 \ud83c\udf5e \ud83d\udcda \ud83e\ude91 ",
+        "options": [
+          "\ud83d\udc31",
+          "\ud83c\udf5e",
+          "\ud83d\udcda",
+          "\ud83e\ude91"
+        ],
+        "answer": "\ud83d\udc31"
+      },
+      {
+        "question": "Where is the sun? \u2601\ufe0f \ud83c\udf1e \ud83c\udf27\ufe0f \ud83c\udf15 ",
+        "options": [
+          "\ud83c\udf1e",
+          "\u2601\ufe0f",
+          "\ud83c\udf27\ufe0f",
+          "\ud83c\udf15"
+        ],
+        "answer": "\ud83c\udf1e"
+      },
+      {
+        "question": "Can you see the apple? \ud83c\udf4f \ud83d\udcd8 \ud83e\uddc3 \ud83d\udec1 ",
+        "options": [
+          "\ud83c\udf4f",
+          "\ud83d\udcd8",
+          "\ud83e\uddc3",
+          "\ud83d\udec1"
+        ],
+        "answer": "\ud83c\udf4f"
+      },
+      {
+        "question": "Which is for coloring? \u270f\ufe0f \ud83c\udf74 \ud83e\ude91 \ud83d\udcf1 ",
+        "options": [
+          "\u270f\ufe0f",
+          "\ud83c\udf74",
+          "\ud83e\ude91",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\u270f\ufe0f"
+      },
+      {
+        "question": "Which one is a bird? \ud83d\udc26 \ud83d\udc1f \ud83d\udc36 \ud83d\udc38 ",
+        "options": [
+          "\ud83d\udc26",
+          "\ud83d\udc1f",
+          "\ud83d\udc36",
+          "\ud83d\udc38"
+        ],
+        "answer": "\ud83d\udc26"
+      },
+      {
+        "question": "Which is a book? \ud83d\udcd8 \ud83c\udf55 \ud83c\udf88 \ud83e\uddf8 ",
+        "options": [
+          "\ud83d\udcd8",
+          "\ud83c\udf55",
+          "\ud83c\udf88",
+          "\ud83e\uddf8"
+        ],
+        "answer": "\ud83d\udcd8"
+      },
+      {
+        "question": "What do you wear? \ud83d\udc55 \ud83c\udf4e \ud83d\udcda \ud83d\udcf1 ",
+        "options": [
+          "\ud83d\udc55",
+          "\ud83c\udf4e",
+          "\ud83d\udcda",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\ud83d\udc55"
+      },
+      {
+        "question": "Which one is used to clean teeth? \ud83e\udea5 \ud83e\uddc3 \ud83c\udf7d \ud83d\udcfa ",
+        "options": [
+          "\ud83e\udea5",
+          "\ud83e\uddc3",
+          "\ud83c\udf7d",
+          "\ud83d\udcfa"
+        ],
+        "answer": "\ud83e\udea5"
+      },
+      {
+        "question": "Can you find the car? \ud83d\ude97 \ud83d\udc36 \ud83c\udf4e \ud83e\uddc3 ",
+        "options": [
+          "\ud83d\ude97",
+          "\ud83d\udc36",
+          "\ud83c\udf4e",
+          "\ud83e\uddc3"
+        ],
+        "answer": "\ud83d\ude97"
+      },
+      {
+        "question": "Which one is a fruit? \ud83c\udf4c \ud83c\udf55 \ud83d\udc36 \ud83e\ude91 ",
+        "options": [
+          "\ud83c\udf4c",
+          "\ud83c\udf55",
+          "\ud83d\udc36",
+          "\ud83d\udc5f"
+        ],
+        "answer": "\ud83c\udf4c"
+      },
+      {
+        "question": "Find the animal \ud83d\udc31 \ud83c\udf5e \ud83d\udcda \ud83e\ude91 ",
+        "options": [
+          "\ud83d\udc31",
+          "\ud83c\udf5e",
+          "\ud83d\udcda",
+          "\ud83e\ude91"
+        ],
+        "answer": "\ud83d\udc31"
+      },
+      {
+        "question": "Where is the sun? \u2601\ufe0f \ud83c\udf1e \ud83c\udf27\ufe0f \ud83c\udf15 ",
+        "options": [
+          "\ud83c\udf1e",
+          "\u2601\ufe0f",
+          "\ud83c\udf27\ufe0f",
+          "\ud83c\udf15"
+        ],
+        "answer": "\ud83c\udf1e"
+      },
+      {
+        "question": "Can you see the apple? \ud83c\udf4f \ud83d\udcd8 \ud83e\uddc3 \ud83d\udec1 ",
+        "options": [
+          "\ud83c\udf4f",
+          "\ud83d\udcd8",
+          "\ud83e\uddc3",
+          "\ud83d\udec1"
+        ],
+        "answer": "\ud83c\udf4f"
+      },
+      {
+        "question": "Which is for coloring? \u270f\ufe0f \ud83c\udf74 \ud83e\ude91 \ud83d\udcf1 ",
+        "options": [
+          "\u270f\ufe0f",
+          "\ud83c\udf74",
+          "\ud83e\ude91",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\u270f\ufe0f"
+      },
+      {
+        "question": "Which one is a bird? \ud83d\udc26 \ud83d\udc1f \ud83d\udc36 \ud83d\udc38 ",
+        "options": [
+          "\ud83d\udc26",
+          "\ud83d\udc1f",
+          "\ud83d\udc36",
+          "\ud83d\udc38"
+        ],
+        "answer": "\ud83d\udc26"
+      },
+      {
+        "question": "Which is a book? \ud83d\udcd8 \ud83c\udf55 \ud83c\udf88 \ud83e\uddf8 ",
+        "options": [
+          "\ud83d\udcd8",
+          "\ud83c\udf55",
+          "\ud83c\udf88",
+          "\ud83e\uddf8"
+        ],
+        "answer": "\ud83d\udcd8"
+      },
+      {
+        "question": "What do you wear? \ud83d\udc55 \ud83c\udf4e \ud83d\udcda \ud83d\udcf1 ",
+        "options": [
+          "\ud83d\udc55",
+          "\ud83c\udf4e",
+          "\ud83d\udcda",
+          "\ud83d\udcf1"
+        ],
+        "answer": "\ud83d\udc55"
+      },
+      {
+        "question": "Which one is used to clean teeth? \ud83e\udea5 \ud83e\uddc3 \ud83c\udf7d \ud83d\udcfa ",
+        "options": [
+          "\ud83e\udea5",
+          "\ud83e\uddc3",
+          "\ud83c\udf7d",
+          "\ud83d\udcfa"
+        ],
+        "answer": "\ud83e\udea5"
+      }
+    ]
+  }
+}

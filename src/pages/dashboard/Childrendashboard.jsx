@@ -1,31 +1,52 @@
 import React, { useEffect, useState } from 'react';
-import { Star, CalendarCheck, Award, BookOpen, Video, Gamepad, Lock, CheckCircle } from 'lucide-react';
+import {
+  Star,
+  CalendarCheck,
+  Award,
+  BookOpen,
+  Video,
+  Gamepad,
+  Lock,
+  CheckCircle,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import axios from 'axios';
+
 const ChildrenDashboard = () => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setUser({
-        name: 'Hannan Hashmi',
-        points: 1234,
-        streak: 7,
-        level: 5,
-        quizzesCompleted: 12,
-        videosWatched: 8,
-        gamesPlayed: 5,
-        achievements: [
-          { name: 'Math Pro', unlocked: true },
-          { name: 'Science Whiz', unlocked: true },
-          { name: 'Nature Expert', unlocked: true },
-          { name: 'Locked', unlocked: false },
-          { name: 'Locked', unlocked: false },
-        ],
-      });
-    }, 300);
+    const fetchUser = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          toast.error('No token found. Please login first.');
+          setLoading(false);
+          return;
+        }
+
+        const res = await axios.get('http://localhost:3000/api/children/dashboard', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        setUser(res.data);
+      } catch (error) {
+        console.error('Failed to fetch user data', error);
+        toast.error('Failed to fetch user data. Please check your login.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUser();
   }, []);
 
-  if (!user) return <div className="text-center mt-10 font-semibold">Loading...</div>;
+  if (loading) return <div className="text-center mt-10 font-semibold">Loading...</div>;
+  if (!user) return <div className="text-center mt-10 text-red-500 font-semibold">Failed to load user data.</div>;
 
   const {
     name,
@@ -35,7 +56,7 @@ const ChildrenDashboard = () => {
     quizzesCompleted,
     videosWatched,
     gamesPlayed,
-    achievements,
+    achievements = [],
   } = user;
 
   return (
@@ -56,35 +77,38 @@ const ChildrenDashboard = () => {
       {/* Actions Section */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <Link to="/quiz">
-        <ActionBox icon={<BookOpen />} title="Quizzes" value={`${quizzesCompleted} completed`} action="Start Quiz" />
-
-             </Link>
-            
-        <ActionBox icon={<Video />} title="Videos" value={`${videosWatched} watched`} action="Watch Now" />
-        <ActionBox icon={<Gamepad />} title="Games" value={`${gamesPlayed} played`} action="Play Game" />
+          <ActionBox icon={<BookOpen />} title="Quizzes" value={`${quizzesCompleted} completed`} action="Start Quiz" />
+        </Link>
+        <Link to='/videos'>
+        <ActionBox icon={<Video />} title="Videos" value={` Watch Animations`} action="Watch Now" />
+        </Link>
+         
+          <Link to="/game">
+        <ActionBox icon={<Gamepad />} title="Games" value={`Explore New Games`} action="Play Game" />
+        </Link>
       </div>
 
       {/* Achievements Section */}
-      <div className="bg-white p-4 sm:p-6 rounded-xl shadow-md mb-6">
-        <h2 className="text-xl sm:text-2xl font-bold text-center mb-4">Your Achievements</h2>
-        <div className="flex flex-wrap justify-center gap-4">
-          {achievements.map((ach, index) => (
-            <Achievement
-              key={index}
-              badge={ach.name}
-              unlocked={ach.unlocked}
-              icon={ach.unlocked ? <CheckCircle /> : <Lock />}
-            />
-          ))}
+      {achievements.length > 0 && (
+        <div className="bg-white p-4 sm:p-6 rounded-xl shadow-md mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-center mb-4">Your Achievements</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {achievements.map((ach, index) => (
+              <Achievement
+                key={index}
+                badge={ach.name}
+                unlocked={ach.unlocked}
+                icon={ach.unlocked ? <CheckCircle /> : <Lock />}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-
-      
+      )}
     </div>
   );
 };
 
-// Components
+// Stat Box Component
 const StatBox = ({ icon, label, value }) => (
   <div className="bg-white p-5 rounded-2xl shadow text-center">
     {icon}
@@ -93,6 +117,7 @@ const StatBox = ({ icon, label, value }) => (
   </div>
 );
 
+// Action Box Component
 const ActionBox = ({ icon, title, value, action }) => (
   <div className="bg-white p-5 rounded-2xl shadow text-center flex flex-col justify-between items-center">
     <div className="flex flex-col items-center space-y-2">
@@ -106,6 +131,7 @@ const ActionBox = ({ icon, title, value, action }) => (
   </div>
 );
 
+// Achievement Badge Component
 const Achievement = ({ badge, unlocked, icon }) => (
   <div
     className={`w-32 text-center p-4 rounded-xl shadow flex flex-col items-center space-y-2 ${
