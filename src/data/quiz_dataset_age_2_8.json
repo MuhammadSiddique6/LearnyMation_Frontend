@@ -1142,6 +1142,370 @@
         "options": ["⛵", "🐠", "🍎", "🎂"],
         "answer": "⛵"
       }
+    ],
+    "LogicThinking": [
+      {
+        "question": "Which one is different? ",
+        "options": ["🐶", "🐱", "🐭", "🚗"],
+        "answer": "🚗"
+      },
+      {
+        "question": "What comes next? 🟥 🟥 🟥 ___ ",
+        "options": ["🟥", "🟩", "🔵", "⭐"],
+        "answer": "🟥"
+      },
+      {
+        "question": "Which is the odd one? ",
+        "options": ["Apple", "Banana", "Car", "Mango"],
+        "answer": "Car"
+      },
+      {
+        "question": "Where do we sleep? ",
+        "options": ["Bed", "Chair", "Fridge", "Desk"],
+        "answer": "Bed"
+      },
+      {
+        "question": "Which one is not food? ",
+        "options": ["Pizza", "Burger", "Shoe", "Rice"],
+        "answer": "Shoe"
+      },
+      {
+        "question": "Which animal barks? ",
+        "options": ["Dog", "Cat", "Cow", "Horse"],
+        "answer": "Dog"
+      },
+      {
+        "question": "What do you open to go inside? ",
+        "options": ["Door", "Spoon", "Pen", "Phone"],
+        "answer": "Door"
+      },
+      {
+        "question": "Which is the tallest? ",
+        "options": ["Tree", "Grass", "Flower", "Stone"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do you wear on your feet? ",
+        "options": ["Shoes", "Hat", "Shirt", "Gloves"],
+        "answer": "Shoes"
+      },
+      {
+        "question": "Which one is round? ",
+        "options": ["Ball", "Box", "Book", "TV"],
+        "answer": "Ball"
+      },
+      {
+        "question": "Which one flies in the sky? ",
+        "options": ["Bird", "Dog", "Cat", "Fish"],
+        "answer": "Bird"
+      },
+      {
+        "question": "Which one can swim? ",
+        "options": ["Fish", "Dog", "Cat", "Horse"],
+        "answer": "Fish"
+      },
+      {
+        "question": "What color is the sky on a clear day? ",
+        "options": ["Blue", "Green", "Red", "Yellow"],
+        "answer": "Blue"
+      },
+      {
+        "question": "Which one is a vehicle? ",
+        "options": ["Car", "Tree", "Dog", "Flower"],
+        "answer": "Car"
+      },
+      {
+        "question": "What do we use to write? ",
+        "options": ["Pen", "Spoon", "Phone", "Shoe"],
+        "answer": "Pen"
+      },
+      {
+        "question": "Which one is cold? ",
+        "options": ["Ice", "Fire", "Sun", "Lamp"],
+        "answer": "Ice"
+      },
+      {
+        "question": "Which one is a fruit? ",
+        "options": ["Apple", "Carrot", "Potato", "Tomato"],
+        "answer": "Apple"
+      },
+      {
+        "question": "Which one is a shape? ",
+        "options": ["Circle", "Apple", "Dog", "Car"],
+        "answer": "Circle"
+      },
+      {
+        "question": "Which one gives milk? ",
+        "options": ["Cow", "Dog", "Cat", "Horse"],
+        "answer": "Cow"
+      },
+      {
+        "question": "Which one is used to eat soup? ",
+        "options": ["Spoon", "Fork", "Knife", "Pen"],
+        "answer": "Spoon"
+      },
+      {
+        "question": "What do plants need to grow? ",
+        "options": ["Water", "Fire", "Salt", "Sugar"],
+        "answer": "Water"
+      },
+      {
+        "question": "Which one is the biggest? ",
+        "options": ["Elephant", "Cat", "Dog", "Mouse"],
+        "answer": "Elephant"
+      },
+      {
+        "question": "Which one is a living thing? ",
+        "options": ["Tree", "Car", "House", "Table"],
+        "answer": "Tree"
+      },
+      {
+        "question": "What do we use to see? ",
+        "options": ["Eyes", "Nose", "Mouth", "Ear"],
+        "answer": "Eyes"
+      },
+      [
+        {
+          "question": "Which one is heavier?",
+          "options": ["Elephant", "Cat", "Bird", "Mouse"],
+          "answer": "Elephant"
+        },
+        {
+          "question": "Which one can you eat?",
+          "options": ["Chair", "Apple", "Shoe", "Car"],
+          "answer": "Apple"
+        },
+        {
+          "question": "What color is grass?",
+          "options": ["Green", "Red", "Blue", "Yellow"],
+          "answer": "Green"
+        },
+        {
+          "question": "Which one is a fruit?",
+          "options": ["Banana", "Car", "Spoon", "Dog"],
+          "answer": "Banana"
+        },
+        {
+          "question": "Which one is a toy?",
+          "options": ["Ball", "Dog", "Car", "Flower"],
+          "answer": "Ball"
+        },
+        {
+          "question": "Which one has wheels?",
+          "options": ["Car", "Dog", "Cat", "Tree"],
+          "answer": "Car"
+        },
+        {
+          "question": "Which one is made of water?",
+          "options": ["Ice", "Rock", "Fire", "Sand"],
+          "answer": "Ice"
+        },
+        {
+          "question": "Which one can jump?",
+          "options": ["Frog", "Tree", "Car", "Fish"],
+          "answer": "Frog"
+        },
+        {
+          "question": "Where do fish live?",
+          "options": ["Water", "Tree", "House", "Sky"],
+          "answer": "Water"
+        },
+        {
+          "question": "Which one is a vegetable?",
+          "options": ["Carrot", "Apple", "Dog", "Car"],
+          "answer": "Carrot"
+        },
+        {
+          "question": "Which one can fly?",
+          "options": ["Bird", "Dog", "Fish", "Cat"],
+          "answer": "Bird"
+        },
+        {
+          "question": "Which one is the smallest?",
+          "options": ["Mouse", "Elephant", "Dog", "Cat"],
+          "answer": "Mouse"
+        },
+        {
+          "question": "What do we wear on our head?",
+          "options": ["Hat", "Shoes", "Shirt", "Gloves"],
+          "answer": "Hat"
+        },
+        {
+          "question": "What do you drink?",
+          "options": ["Water", "Bread", "Apple", "Car"],
+          "answer": "Water"
+        },
+        {
+          "question": "Which one is soft?",
+          "options": ["Pillow", "Rock", "Tree", "Car"],
+          "answer": "Pillow"
+        },
+        {
+          "question": "Which one has feathers?",
+          "options": ["Bird", "Dog", "Cat", "Horse"],
+          "answer": "Bird"
+        },
+        {
+          "question": "What do you use to cut paper?",
+          "options": ["Scissors", "Pen", "Spoon", "Fork"],
+          "answer": "Scissors"
+        },
+        {
+          "question": "Which one is a color?",
+          "options": ["Red", "Dog", "Car", "Tree"],
+          "answer": "Red"
+        },
+        {
+          "question": "Which one is made of wood?",
+          "options": ["Table", "Car", "Fish", "Cat"],
+          "answer": "Table"
+        },
+        {
+          "question": "Which one is a number?",
+          "options": ["Five", "Dog", "Car", "Tree"],
+          "answer": "Five"
+        },
+        {
+          "question": "Which one is a place to learn?",
+          "options": ["School", "Car", "Tree", "Dog"],
+          "answer": "School"
+        },
+        {
+          "question": "Which one is a tool?",
+          "options": ["Hammer", "Dog", "Cat", "Apple"],
+          "answer": "Hammer"
+        },
+        {
+          "question": "Which one is a season?",
+          "options": ["Winter", "Dog", "Car", "Tree"],
+          "answer": "Winter"
+        },
+        {
+          "question": "Which one is found in the sky at night?",
+          "options": ["Star", "Dog", "Car", "Tree"],
+          "answer": "Star"
+        },
+        {
+          "question": "Which one do you use to tell time?",
+          "options": ["Clock", "Pen", "Spoon", "Hat"],
+          "answer": "Clock"
+        },
+        {
+          "question": "Which one is sweet?",
+          "options": ["Candy", "Rock", "Car", "Dog"],
+          "answer": "Candy"
+        },
+        {
+          "question": "Which one can you wear on your hands?",
+          "options": ["Gloves", "Shoes", "Hat", "Shirt"],
+          "answer": "Gloves"
+        },
+        {
+          "question": "Which one is a musical instrument?",
+          "options": ["Piano", "Dog", "Car", "Tree"],
+          "answer": "Piano"
+        },
+        {
+          "question": "Which one do bees make?",
+          "options": ["Honey", "Milk", "Water", "Bread"],
+          "answer": "Honey"
+        },
+        {
+          "question": "Which one is a pet?",
+          "options": ["Dog", "Car", "Tree", "Rock"],
+          "answer": "Dog"
+        },
+        {
+          "question": "Which one is a day of the week?",
+          "options": ["Monday", "Car", "Dog", "Tree"],
+          "answer": "Monday"
+        },
+        {
+          "question": "Which one is a body part?",
+          "options": ["Hand", "Car", "Dog", "Tree"],
+          "answer": "Hand"
+        },
+        {
+          "question": "Which one is used to drink soup?",
+          "options": ["Spoon", "Fork", "Knife", "Pen"],
+          "answer": "Spoon"
+        },
+        {
+          "question": "Which one has stripes?",
+          "options": ["Tiger", "Dog", "Car", "Cat"],
+          "answer": "Tiger"
+        },
+        {
+          "question": "Which one is used to write?",
+          "options": ["Pen", "Spoon", "Chair", "Car"],
+          "answer": "Pen"
+        },
+        {
+          "question": "Which one lives in water?",
+          "options": ["Fish", "Dog", "Cat", "Bird"],
+          "answer": "Fish"
+        },
+        {
+          "question": "Which one is a type of weather?",
+          "options": ["Rain", "Dog", "Car", "Tree"],
+          "answer": "Rain"
+        },
+        {
+          "question": "Which one do you use to clean your teeth?",
+          "options": ["Toothbrush", "Spoon", "Pen", "Car"],
+          "answer": "Toothbrush"
+        },
+        {
+          "question": "Which one is a flower?",
+          "options": ["Rose", "Dog", "Car", "Tree"],
+          "answer": "Rose"
+        },
+        {
+          "question": "Which one can grow?",
+          "options": ["Plant", "Car", "Dog", "Table"],
+          "answer": "Plant"
+        },
+        {
+          "question": "Which one is a farm animal?",
+          "options": ["Cow", "Dog", "Cat", "Car"],
+          "answer": "Cow"
+        },
+        {
+          "question": "Which one can run fast?",
+          "options": ["Cheetah", "Turtle", "Snail", "Elephant"],
+          "answer": "Cheetah"
+        },
+        {
+          "question": "Which one is used for cutting paper?",
+          "options": ["Scissors", "Pen", "Spoon", "Knife"],
+          "answer": "Scissors"
+        },
+        {
+          "question": "Which one has wheels?",
+          "options": ["Bicycle", "Dog", "Cat", "Tree"],
+          "answer": "Bicycle"
+        },
+        {
+          "question": "Which one is a fruit that is yellow?",
+          "options": ["Banana", "Apple", "Grapes", "Carrot"],
+          "answer": "Banana"
+        },
+        {
+          "question": "Which one is used to listen?",
+          "options": ["Ear", "Eye", "Mouth", "Nose"],
+          "answer": "Ear"
+        },
+        {
+          "question": "Which one lives in a nest?",
+          "options": ["Bird", "Dog", "Cat", "Fish"],
+          "answer": "Bird"
+        },
+        {
+          "question": "Which one is a sweet treat?",
+          "options": ["Chocolate", "Carrot", "Dog", "Tree"],
+          "answer": "Chocolate"
+        }
+      ]
     ]
   }
 }
