@@ -13,10 +13,25 @@ const QuizPage = () => {
   const [userAnswers, setUserAnswers] = useState([]);
   const [startTime] = useState(Date.now()); // quiz start time in milliseconds
 
-  useEffect(() => {
-    const selectedQuestions = getrandomquestion(quizData, 5);
-    setQuestions(selectedQuestions);
-  }, []);
+ const shuffleOptionsAndUpdateAnswer = (questions) => {
+  return questions.map((q) => {
+    const options = [...q.options];
+    // Shuffle options array
+    for (let i = options.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    // Find new index of correct answer
+    const newAnswer = options.find((opt) => opt === q.answer);
+    return { ...q, options, answer: newAnswer };
+  });
+};
+
+useEffect(() => {
+  const selectedQuestions = getrandomquestion(quizData, 5, 25);
+  const shuffledQuestions = shuffleOptionsAndUpdateAnswer(selectedQuestions);
+  setQuestions(shuffledQuestions);
+}, []);
 
   useEffect(() => {
     const timer = setInterval(() => {

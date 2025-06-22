@@ -63,36 +63,36 @@ const EducatorDashboard = () => {
     },
     {
       title: "Achievements",
-      value: progress.achievements.length,
+      value: progress.level,
       icon: <FaTrophy className="text-green-500 text-xl" />
     },
   ];
-
+  
   const subjectProgress = [
     {
       name: "Math",
-      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Math / progress.quizzesCompleted * 100) : 0,
+      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Math / (progress.quizzesCompleted * 5) * 10000) : 0,
       icon: <FaBookOpen className="text-blue-600" />
     },
     {
       name: "Science",
-      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Science / progress.quizzesCompleted * 100) : 0,
+      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Science / (progress.quizzesCompleted * 5) * 10000) : 0,
       icon: <FaLightbulb className="text-yellow-400" />
     },
     {
       name: "Creativity",
-      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Creativity / progress.quizzesCompleted * 100) : 0,
+      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.Creativity / (progress.quizzesCompleted * 5) * 10000) : 0,
       icon: <FaPaintBrush className="text-pink-500" />
     },
     {
       name: "Logic Thinking",
-      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.LogicThinking / progress.quizzesCompleted * 100) : 0,
+      percentage: progress.quizzesCompleted > 0 ? (progress.totalScoresBySubject.LogicThinking / (progress.quizzesCompleted * 5) * 10000) : 0,
       icon: <FaChartLine className="text-gray-500" />
     },
    {
   name: "Object Detection",
   percentage: progress.quizzesCompleted > 0
-    ? (progress.totalScoresBySubject.ObjectDetection / progress.quizzesCompleted * 100)
+    ? (progress.totalScoresBySubject.ObjectDetection / (progress.quizzesCompleted * 5) * 10000)
     : 0,
   icon: <FaEye className="text-red-500" /> // Updated icon and color
 }

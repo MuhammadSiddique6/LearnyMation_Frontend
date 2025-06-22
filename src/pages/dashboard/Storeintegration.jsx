@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { toast } from 'react-hot-toast';
+import { toast } from "react-hot-toast";
 import axios from "axios";
+
 const StoreIntegration = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [mobile, setMobile] = useState("");
@@ -13,6 +14,10 @@ const StoreIntegration = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
+  const isValidPakistaniMobile = (number) => {
+    return /^03\d{9}$/.test(number);
+  };
+
   const products = [
     {
       id: 1,
@@ -20,7 +25,7 @@ const StoreIntegration = () => {
       description: "Learn robotics and coding with this interactive kit",
       price: "Rs. 24,499",
       image: "https://cdn11.bigcommerce.com/s-t3eo8vwp22/images/stencil/1500x1500/products/590/1842/REV-45-2041-EDU_Kit_V2-FINAL__01041.1612558197.png?c=2",
-      category: "Robotics"
+      category: "Robotics",
     },
     {
       id: 2,
@@ -28,7 +33,7 @@ const StoreIntegration = () => {
       description: "Explore the microscopic world with HD clarity",
       price: "Rs. 12,999",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ26FPD5XIEaZ7TKM9h2GnopORre_j1Deacw&s",
-      category: "Microscopes"
+      category: "Microscopes",
     },
     {
       id: 3,
@@ -36,15 +41,15 @@ const StoreIntegration = () => {
       description: "Build and program your own circuits",
       price: "Rs. 8,499",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAJnUy779UUEBT4dZN03h_wfxMQ8U5icMdA&s",
-      category: "Electronics"
+      category: "Electronics",
     },
     {
       id: 4,
       name: "Advanced Robotics Kit",
       description: "Master complex robotics with this all-in-one kit",
       price: "Rs. 54,999",
-      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hiruajDOL3s3tqpWjtTWpOAVAJrTTVAxeA&s",
-      category: "Robotics"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hiruajDOL3s3tqpWjtTWpOAVAJrTTVAxeA&s",
+      category: "Robotics",
     },
     {
       id: 5,
@@ -52,7 +57,7 @@ const StoreIntegration = () => {
       description: "Compact microscope for field exploration",
       price: "Rs. 10,999",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVaPX91EyelYvPJBtcE4Zm25GqIEaJFFYkw&s",
-      category: "Microscopes"
+      category: "Microscopes",
     },
     {
       id: 6,
@@ -60,26 +65,23 @@ const StoreIntegration = () => {
       description: "Learn electronics through fun experiments",
       price: "Rs. 9,499",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYX1UYuT5avSOg_rRGHymUvaZzvsggqFoykQ&s",
-      category: "Electronics"
-    },{
+      category: "Electronics",
+    },
+    {
       id: 7,
       name: "Electronics Discovery Kit",
       description: "Learn electronics through fun experiments",
       price: "Rs. 44,099",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbfIn8K9UT7Xpl-ucHpwG2BEbOQMbZeoiBg&s",
-      category: "Electronics"
-    }
+      category: "Electronics",
+    },
   ];
 
   const parsePrice = (price) => parseInt(price.replace(/Rs\.\s?|,/g, ""));
 
   const filteredProducts = products
-    .filter((product) =>
-      product.name.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-    .filter((product) =>
-      selectedCategory === "All" || product.category === selectedCategory
-    )
+    .filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter((product) => selectedCategory === "All" || product.category === selectedCategory)
     .filter((product) => {
       const price = parsePrice(product.price);
       if (priceRange === "1000-9999") return price >= 1000 && price <= 9999;
@@ -103,43 +105,51 @@ const StoreIntegration = () => {
     setShowModal(true);
   };
 
-const handleSubmitOrder = async () => {
-  if (!mobile || !address) {
-    toast.error("Please fill all fields");
-    return;
-  }
-
-  const token = localStorage.getItem("token"); // Or sessionStorage.getItem("token")
-
-  const orderData = {
-    productId: selectedProduct.id,
-    productName: selectedProduct.name,
-    mobile,
-    address,
-  };
-
-  try {
-    const res = await axios.post("http://localhost:3000/api/order", orderData, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json"
-      }
-    });
-
-    if (res.status === 200 || res.status === 201) {
-      toast.success("Order placed successfully!");
-      setShowModal(false);
-      setMobile("");
-      setAddress("");
-      setSelectedProduct(null);
-    } else {
-      toast.error("Failed to place order");
+  const handleSubmitOrder = async () => {
+    if (!mobile || !address) {
+      toast.error("Please fill all fields");
+      return;
     }
-  } catch (error) {
-    console.error("Order error:", error.response || error);
-    toast.error(error?.response?.data?.message || "Error submitting order");
-  }
-};
+    if (mobile.length !== 11) {
+      toast.error("Mobile number must be exactly 11 digits");
+      return;
+    }
+     if (!isValidPakistaniMobile(mobile)) {
+      toast.error("Enter a valid Pakistani mobile number starting with 03 and 11 digits");
+      return;
+    }
+
+    const token = localStorage.getItem("token");
+
+    const orderData = {
+      productId: selectedProduct.id,
+      productName: selectedProduct.name,
+      mobile,
+      address,
+    };
+
+    try {
+      const res = await axios.post("http://localhost:3000/api/order", orderData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (res.status === 200 || res.status === 201) {
+        toast.success("Order placed successfully!");
+        setShowModal(false);
+        setMobile("");
+        setAddress("");
+        setSelectedProduct(null);
+      } else {
+        toast.error("Failed to place order");
+      }
+    } catch (error) {
+      console.error("Order error:", error.response || error);
+      toast.error(error?.response?.data?.message || "Error submitting order");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -219,7 +229,7 @@ const handleSubmitOrder = async () => {
       </div>
 
       {/* Order Modal */}
-      {showModal && selectedProduct && (
+        {showModal && selectedProduct && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
             <h2 className="text-lg font-semibold mb-4">This order is Cash on Delivery</h2>
@@ -232,11 +242,26 @@ const handleSubmitOrder = async () => {
 
             <input
               type="text"
+              maxLength={11}
               value={mobile}
-              onChange={(e) => setMobile(e.target.value)}
-              placeholder="Mobile Number"
-              className="w-full mb-3 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              onChange={(e) => {
+                const val = e.target.value;
+                if (/^\d*$/.test(val)) setMobile(val);
+              }}
+              placeholder="Mobile Number (11 digits, starts with 03)"
+              className={`w-full mb-1 px-3 py-2 border rounded-md focus:outline-none focus:ring-2
+                ${
+                  mobile.length === 11 && isValidPakistaniMobile(mobile)
+                    ? "focus:ring-green-500"
+                    : "focus:ring-red-500"
+                }`}
             />
+            {mobile && !isValidPakistaniMobile(mobile) && (
+              <p className="text-xs text-red-600 mb-2">
+                Must be exactly 11 digits and start with 03
+              </p>
+            )}
+
             <textarea
               value={address}
               onChange={(e) => setAddress(e.target.value)}
@@ -254,7 +279,12 @@ const handleSubmitOrder = async () => {
               </button>
               <button
                 onClick={handleSubmitOrder}
-                className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-700"
+                disabled={mobile.length !== 11 || !address.trim() || !isValidPakistaniMobile(mobile)}
+                className={`px-4 py-2 rounded-md ${
+                  mobile.length === 11 && address.trim() && isValidPakistaniMobile(mobile)
+                    ? "bg-black text-white hover:bg-gray-700"
+                    : "bg-gray-300 text-gray-600 cursor-not-allowed"
+                }`}
               >
                 Confirm Order
               </button>

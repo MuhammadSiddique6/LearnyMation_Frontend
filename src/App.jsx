@@ -25,7 +25,6 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Toaster position="top-right" reverseOrder={false} /> {/* ✅ Add Toaster here */}
         <Routes>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
@@ -57,6 +56,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <MainLayout>
+                        <Toaster position="top-right" reverseOrder={false} />
                   <StoreIntegration />
                 </MainLayout>
               </ProtectedRoute>
