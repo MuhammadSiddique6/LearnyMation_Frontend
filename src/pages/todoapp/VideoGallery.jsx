@@ -9,7 +9,7 @@ const videoList = [
   { title: "Clap Animation", path: "/videos/animation1/clap.mp4" },
   { title: "ABC Animation", path: "/videos/animation1/ABC.mp4" },
   { title: "Finger Animation", path: "/videos/animation1/finger.mp4" },
-  { title: "Sunny Spider Aniamtion", path: "/public/videos/animation1/octopus.mp4" },
+  { title: "Sunny Spider Aniamtion", path: "/videos/animation1/octopus.mp4" },
   { title: "123 Animation", path: "/videos/animation1/123.mp4" },
   // Add more videos as needed
 ];
