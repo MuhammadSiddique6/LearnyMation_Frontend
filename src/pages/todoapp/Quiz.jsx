@@ -14,24 +14,48 @@ const QuizPage = () => {
   const [startTime] = useState(Date.now()); // quiz start time in milliseconds
 
  const shuffleOptionsAndUpdateAnswer = (questions) => {
-  return questions.map((q) => {
-    const options = [...q.options];
-    // Shuffle options array
-    for (let i = options.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [options[i], options[j]] = [options[j], options[i]];
-    }
-    // Find new index of correct answer
-    const newAnswer = options.find((opt) => opt === q.answer);
-    return { ...q, options, answer: newAnswer };
-  });
+  return questions
+    .filter(
+      (q) =>
+        typeof q.question === "string" &&
+        Array.isArray(q.options) &&
+        q.options.length > 1 &&
+        typeof q.answer === "string"
+    )
+    .map((q) => {
+      const options = [...q.options];
+
+      // Shuffle options array
+      for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+      }
+
+      const newAnswer = options.find((opt) => opt === q.answer);
+
+      return {
+        ...q,
+        options,
+        answer: newAnswer ?? q.answer, // fallback in case answer is missing after shuffle
+      };
+    });
 };
+
 
 useEffect(() => {
   const selectedQuestions = getrandomquestion(quizData, 5, 25);
   const shuffledQuestions = shuffleOptionsAndUpdateAnswer(selectedQuestions);
+  
+  // Optional logging for dev
+  shuffledQuestions.forEach((q, i) => {
+    if (!Array.isArray(q.options)) {
+      console.warn(`Question ${i} has invalid options:`, q);
+    }
+  });
+
   setQuestions(shuffledQuestions);
 }, []);
+
 
   useEffect(() => {
     const timer = setInterval(() => {
